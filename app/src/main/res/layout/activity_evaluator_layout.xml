@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_1c1f39">
+
+        <ImageView
+            android:id="@+id/back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="在线智能语音评测"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_60" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginRight="86dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/left_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_left" />
+
+        <TextView
+            android:id="@+id/cur_page_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_959ba6"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/right_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_right" />
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_view"
+        android:layout_below="@id/title_bar" />
+
+</RelativeLayout>

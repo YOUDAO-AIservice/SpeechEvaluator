@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_36">12dp</dimen>
+    <dimen name="text_size_24">8dp</dimen>
+    <dimen name="text_size_72">24dp</dimen>
+    <dimen name="text_size_60">20dp</dimen>
+
+    <dimen name="text_size_45">15dp</dimen>
+    <dimen name="text_size_20">6.67dp</dimen>
+    <dimen name="text_size_32">10.67dp</dimen>
+
+    <dimen name="margin_20">6.67dp</dimen>
+</resources>
